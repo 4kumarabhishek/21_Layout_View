@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2>Contact</h2>
+@*If we write anything below here, it will be rendered using the layout view in same positon where @RenderBody() is written.
+
+    But what if we want to add anything written here to be below the footer of layout page. In that case we have to use "section" method.
+
+      Please follow the code from here to layout page*@
+
+@section MySection{
+    Today's date is @DateTime.Now
+    <!--Go on layout page -> line 36-->
+}
